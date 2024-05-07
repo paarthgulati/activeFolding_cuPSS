@@ -10,7 +10,7 @@ To use this solver, and the cuPSS library in general, the follwing dependencies 
 - cuRAND
 - FFTW3
 
-Once installed, you can compile the solver using the comp.sh file as:
+Once dowloaded, you can compile the solver using the comp.sh file as:
 ```
 comp.sh -s model_ALLPS_gravity
 ```
