@@ -1,6 +1,6 @@
 # activeFolding_cuPSS
 
-This is the pseduo spectral solver built atop the cuPSS library (arXiv:2405.02410) availabe at https://github.com/fcaballerop (v0.0.1) to solve continuum field equations for a mixture of active liquid crystals and a passive isotropic fluid in 2D on a regular lattice. 
+This is the pseduo spectral solver built atop the cuPSS library (arXiv:2405.02410) availabe at https://github.com/fcaballerop/cuPSS (v0.0.1) to solve continuum field equations for a mixture of active liquid crystals and a passive isotropic fluid in 2D on a regular lattice. 
 
 Using the cuPSS library, we can solve generic stochastic PDEs. Here, I only include the solver (solvers/model_ALLPS_gravity) for the equations described below, as discussed in (link).
 
@@ -21,7 +21,7 @@ This can then be run using:
 ```
 run/run_activeFolding.sh
 ```
-This solves the follwing equations in 2D for the default parameters selected from solvers/model_ALLPS_gravity/default_parameters.txt and edited paramteres listed in run/run_activeFolding.sh
+This solves the following equations in 2D for the default parameters selected from solvers/model_ALLPS_gravity/default_parameters.txt and edited paramteres listed in run/run_activeFolding.sh
 
 # Continuum model
 
