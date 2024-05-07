@@ -13,6 +13,10 @@ while getopts ":s:h" option; do
 done
 MAIN=""
 
+if [ ! -d "bin" ]; then
+  mkdir -p bin
+fi
+
 if test -f "solvers/${solver_name}/${solver_name}.cu"; then
     MAIN="solvers/${solver_name}/${solver_name}.cu"
     echo "compiling: ${MAIN}"
