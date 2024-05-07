@@ -29,7 +29,7 @@ The model is described in terms of a phase field $\phi$ describing the relative 
 
 $$\partial_t \phi + v \cdot \nabla \phi = M \nabla^2 (a_\phi \phi + b_\phi \phi^3 + \kappa_\phi \nabla^2 \phi), $$
 
-$$\partial_t Q = \dfrac{\lambda}{2} A  - \omega\cdot Q + Q\cdot \omega +\dfrac{1}{\gamma_Q} H, $$
+$$\partial_t Q = \lambda A  - \omega\cdot Q + Q\cdot \omega +\dfrac{1}{\gamma_Q} H, $$
 
 $$0 = \eta \nabla^2 v - \nabla P + \nabla \cdot \sigma + f_g,$$
 
