@@ -21,7 +21,7 @@ aPhi=-20.0 #aPhi < 0 for phase separating fluid mixture
 bPhi=20.0 #bPhi=|aPhi|
 kappaHatPhi=30.00 #Capillary stress coeffcient (explicitly set equal to kappaPhi for modelH)
 
-alpha=-2.00 #Activity of the Active Phase (alpha <0 for extensile activity) 
+alpha=-3.00 #Activity of the Active Phase (alpha <0 for extensile activity) 
 KQ=16.0 #Elastic Modulus of the Nematic
 
 while getopts ":t:N:n:a:s:K:A:B:k:h" option; do
