@@ -42,3 +42,11 @@ The stress in the Stokes equation consists of the capillary stress ($\sigma^\phi
 $$\sigma_{ij}^\phi = -\hat{k_\phi} (\nabla_i \phi \nabla_j \phi - \frac12 \delta_{ij} (\nabla \phi)^2)$$
 $$\sigma_{ij}^e = -\lambda H_{ij} + Q_{ik} H_{kj} - H_{ik}Q_{kj}$$
 $$\sigma_{ij}^a = \alpha \tilde{\phi} Q_{ij}$$
+
+
+## Transition from asymmetric interface fluctuations to active folding:
+Representative snapshots of the steady state configuration of the phase field are shown here. Here the active phase ($\tilde{\phi}=1$) is shown in cyan and the passive phase ($\tilde{\phi}=0$) in black, for increasing activity at two different values of the interface surface tension
+
+![image](https://github.com/paarthgulati/activeFolding_cuPSS/assets/64762728/9f0ce2b5-f8f7-4d3f-8c48-d0f73b0f435d)
+
+The figure captions have the parameter values listed in physical units (described in detail in the paper). To recreate these simulation results, use the default values included with the solver and set activtiy and phase field paramters as $\alpha^\rm{sim} = -|\alpha|/10$ and $-a_{\phi}^\rm{sim} = b_{\phi}^\rm{sim} =\gamma/10$ and $\kappa_\phi^\rm{sim} = \hat{\kappa_\phi}^\rm{sim} = 1.50 \times (\gamma/10)$.
