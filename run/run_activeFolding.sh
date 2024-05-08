@@ -61,7 +61,7 @@ while getopts ":t:N:n:a:s:K:A:B:k:h" option; do
   esac
 done
 
-DIRTREE=Nx_${Nx}_Ny_${Ny}_dt_${dt}_aPhi_${aPhi}_KQ_${KQ}/alpha_${alpha}_seed_${seed}  #OUTPUT DATA IS SAVED IN A DIRETREE LABELLED AS SUCH. ADAPT BASED ON THE PAREMETERS THAT ARE BEING MODIFIED
+DIRTREE=Nx_${Nx}_Ny_${Ny}_dt_${dt}_aPhi_${aPhi}_KQ_${KQ}/alpha_${alpha}_seed_${seed}  #OUTPUT DATA IS SAVED IN A DIRETREE LABELLED AS SUCH. ADAPT BASED ON THE PARAMETERS THAT ARE BEING MODIFIED
 
 ################################################################################################
 ################################################################################################
@@ -122,7 +122,7 @@ ${rootDir}/bin/${solver_name} sim_parameters.txt
 
 ################################################################################################
 ################################################################################################
-## (OPTIONAL): CREATE A MOVIE FROM THE OUTPUT PHI DATA
+## UNCOMMENT TO DIRECTLY OUTPUT A MOVIE FROM THE PHASE FIELD DATA
 
 # echo "Simulation Finished! Creating avi files."
 # if [ ! -d "analysis/movies" ]; then
