@@ -10,7 +10,7 @@ To use this solver, and the cuPSS library in general, the follwing dependencies 
 - cuRAND
 - FFTW3
 
-Once dowloaded, you can compile the solver using the comp.sh file as:
+Once downloaded, you can compile the solver using the comp.sh file as:
 ```
 comp.sh -s model_ALLPS_gravity
 ```
@@ -33,12 +33,12 @@ $$\partial_t Q = \lambda A  - \omega\cdot Q + Q\cdot \omega +\dfrac{1}{\gamma_Q}
 
 $$0 = \eta \nabla^2 v - \nabla P + \nabla \cdot \sigma + f_g,$$
 
-where the flow is assumed to be incompressible ($\nabla \cdot v = 0$), $A_{ij} = \dfrac{1}{2} (\partial_i v_j + \partial_j v_i ), \omega_{ij} = \dfrac{1}{2} (\partial_i v_j - \partial_j v_i )$ are the strain rate and the vorticity of the flow field respectively. The nematic molecular field, 
+where the flow is assumed to be incompressible ($\nabla \cdot v = 0$). $A_{ij} = \dfrac{1}{2} (\partial_i v_j + \partial_j v_i ), \omega_{ij} = \dfrac{1}{2} (\partial_i v_j - \partial_j v_i )$ are the strain rate and the vorticity of the flow field respectively. The nematic molecular field, 
 $$H_{ij} = a_Q \tilde{\phi} Q_{ij} + b_Q \rm{Tr}{Q^2} Q_{ij} + K_Q \nabla^2 Q_{ij},$$
-is derived from a Landau-de Gennes free energy. Here, $\tilde{\phi} = (1+\phi/\phi_0)/2,$ where $\phi_0 = \sqrt{-a_\phi/b_\phi},$ is the volume fraction of the active phase.
+is derived from a Landau-de Gennes free energy. With $\phi_0 = \sqrt{-a_\phi/b_\phi}, \tilde{\phi} = (1+\phi/\phi_0)/2$ is the volume fraction of the active phase.
 
 
 The stress in the Stokes equation consists of the capillary stress ($\sigma^\phi$), elastic stress ($\sigma^e$) and the active stresses ($\sigma^a$) as:
-$$\sigma^\phi = -\hat{k_\phi} (\nabla_i \phi \nabla_j \phi - \frac12 \delta_{ij} (\nabla \phi)^2)$$
-$$\sigma^e = -\lambda H_{ij} + Q_{ik} H_{kj} - H_{ik}Q_{kj}$$
-$$\sigma^a = \alpha \tilde{\phi} Q_{ij}$$
+$$\sigma_{ij}^\phi = -\hat{k_\phi} (\nabla_i \phi \nabla_j \phi - \frac12 \delta_{ij} (\nabla \phi)^2)$$
+$$\sigma_{ij}^e = -\lambda H_{ij} + Q_{ik} H_{kj} - H_{ik}Q_{kj}$$
+$$\sigma_{ij}^a = \alpha \tilde{\phi} Q_{ij}$$
