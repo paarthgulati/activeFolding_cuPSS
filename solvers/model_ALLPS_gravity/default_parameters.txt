@@ -25,7 +25,7 @@ kappaPhi = 30.0
 kappaHatPhi = 30.0
 MPhi = 1.0
 
-gGrav = 0.0
+gGrav = 0.01
 
 eta = 1.0
 GammaFric = 0.0
