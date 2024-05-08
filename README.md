@@ -12,13 +12,13 @@ To use this solver, and the cuPSS library in general, the follwing dependencies 
 
 Once downloaded, you can compile the solver and the required src/ code using comp.sh as:
 ```
-comp.sh -s model_ALLPS_gravity
+./comp.sh -s model_ALLPS_gravity
 ```
 This compiles the solver "model_ALLPS_gravity" to bin/ which will then be used to solve the equations necessary to describe phase separation between an active and a passive fluid.
 
 The compiled solver can be run using:
 ```
-run/run_activeFolding.sh
+./run/run_activeFolding.sh
 ```
 This solves the model equations in 2D (described below) for the default parameters selected from solvers/model_ALLPS_gravity/default_parameters.txt and edited parametres listed in run/run_activeFolding.sh
 
