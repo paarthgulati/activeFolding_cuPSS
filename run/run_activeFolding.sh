@@ -12,9 +12,9 @@ seed=1 #Random seed to set up the initial noise perturbation
 Nx=1024 #System size
 Ny=1024
 
-NSteps=2000000 #Total Number of time steps 
-NSave=10000 #Output data files every NSave
-dt=0.001 #time step size
+NSteps=20000 #10000000, Total Number of time steps  
+NSave=500 #50000, Output data files every NSave
+dt=0.001 #0.0002, time step size
 
 kappaPhi=30.00 #Cahn Hilliard Parameters
 aPhi=-20.0 #aPhi < 0 for phase separating fluid mixture
