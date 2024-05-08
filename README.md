@@ -10,13 +10,13 @@ To use this solver, and the cuPSS library in general, the follwing dependencies 
 - cuRAND
 - FFTW3
 
-Once downloaded, you can compile the solver and the required src/ code using comp.sh as:
+Once downloaded, you can compile the solver and the required src/ code using the included compile file comp.sh as:
 ```
 ./comp.sh -s model_ALLPS_gravity
 ```
 This compiles the solver "model_ALLPS_gravity" to bin/ which will then be used to solve the equations necessary to describe phase separation between an active and a passive fluid.
 
-The compiled solver can be run using:
+The compiled solver can then be conveniently run using:
 ```
 ./run/run_activeFolding.sh
 ```
